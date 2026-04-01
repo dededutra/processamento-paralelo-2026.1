@@ -1,0 +1,1 @@
+# processamento-paralelo-2026.1
