@@ -26,9 +26,17 @@ int obter_num_threads() {
 }
 
 int main(int argc, char** argv) {
-    int W = 1280;
-    int H = 720;
-    int num_iteracoes = 10;
+
+    int W;
+    int H;
+    int num_iteracoes;
+
+    printf("Tamanho da Imagem: WxL\n");
+    scanf("%d", &W);
+    scanf("%d", &H);
+
+    printf("Numero de Iteracoes (default 10): ");
+    scanf("%d", &num_iteracoes) == 1 ? num_iteracoes : 10; // Permite passar o número de iterações como argumento
 
     // Definição do Kernel Gaussiano 5x5 e soma dos pesos
     int kernel[5][5] = {
